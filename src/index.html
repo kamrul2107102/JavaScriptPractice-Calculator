@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="title">Simple Calculator</h1>
+
+    <div class="calculator">
+      <input type="text" id="first" placeholder="Enter First Number" />
+      <input
+        type="text"
+        id="second"
+        placeholder="Enter Second Number (Optional)"
+      />
+
+      <p id="result">result:0</p>
+
+      <div class="calculator-grid">
+        <button type="button" onclick="Add()">+</button>
+        <button type="button" onclick="Subtract()">−</button>
+        <button type="button" onclick="Multiply()">×</button>
+        <button type="button" onclick="Divide()">÷</button>
+
+        <button type="button" onclick="Modulus()">%</button>
+        <button type="button" onclick="Power()">xʸ</button>
+        <button type="button" onclick="Square('first')">x² (1st)</button>
+        <button type="button" onclick="Square('second')">x² (2nd)</button>
+
+        <button type="button" onclick="Factorial('first')">x! (1st)</button>
+        <button type="button" onclick="Factorial('second')">x! (2nd)</button>
+        <button type="button" class="clear-btn" onclick="Clear()">C</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

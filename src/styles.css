@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+#result {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: right;
+  width: 100%;
+  padding: 10px;
+  background: #eaeaea;
+  border-radius: 5px;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.clear-btn {
+  grid-column: span 2; /* Makes "C" button take two columns */
+  background-color: #ff3b3b;
+}
+
+.clear-btn:hover {
+  background-color: #c20000;
+}

@@ -1,2 +1,2 @@
 # JavaScriptPractice-Calculator
-Created with CodeSandbox
+Enjoing the beauty of JS
